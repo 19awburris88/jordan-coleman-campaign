@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "campaign"
+    label: "Campaign Content"
+    files:
+
+      - label: "Homepage"
+        name: "homepage"
+        file: "src/content/homepage.json"
+
+        fields:
+          - {
+              label: "Hero Headline",
+              name: "heroHeadline",
+              widget: "string"
+            }
+
+          - {
+              label: "Hero Subheadline",
+              name: "heroSubheadline",
+              widget: "text"
+            }
+
+          - {
+              label: "Donation Link",
+              name: "donationLink",
+              widget: "string"
+            }
+
+          - {
+              label: "Volunteer Email",
+              name: "volunteerEmail",
+              widget: "string"
+            }
+
+          - {
+              label: "About Jordan",
+              name: "aboutJordan",
+              widget: "markdown"
+            }
