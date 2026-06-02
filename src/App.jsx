@@ -1,4 +1,7 @@
 import "./index.css";
+import jordanProfile from "./assets/jc-profile.jpg";
+
+const donateLink = "https://secure.actblue.com/donate/jordancoleman";
 
 function App() {
   return (
@@ -12,6 +15,14 @@ function App() {
           <a href="#about">Meet Jordan</a>
           <a href="#priorities">Priorities</a>
           <a href="#volunteer">Volunteer</a>
+          <a
+            href={donateLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="donate-nav"
+          >
+            Donate
+          </a>
         </div>
       </nav>
 
@@ -26,14 +37,24 @@ function App() {
           </p>
 
           <div className="hero-buttons">
-            <a className="btn primary" href="#volunteer">Join the Campaign</a>
-            <a className="btn secondary" href="#priorities">See Priorities</a>
+            <a
+              className="btn primary"
+              href={donateLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Donate Today
+            </a>
+
+            <a className="btn secondary" href="#volunteer">
+              Volunteer
+            </a>
           </div>
         </div>
 
         <div className="hero-card">
-          <div className="photo-placeholder">
-            <span>JC</span>
+          <div className="candidate-photo">
+            <img src={jordanProfile} alt="Jordan Coleman" />
           </div>
           <h2>Jordan Coleman</h2>
           <p>Candidate for Hancock County Commissioner</p>
@@ -100,9 +121,20 @@ function App() {
           </p>
         </div>
 
-        <a className="btn primary" href="mailto:campaign@example.com">
-          Volunteer Today
-        </a>
+        <div className="cta-buttons">
+          <a
+            className="btn primary"
+            href={donateLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Donate
+          </a>
+
+          <a className="btn secondary" href="mailto:jordancolemanruns@gmail.com">
+            Volunteer
+          </a>
+        </div>
       </section>
 
       <footer>
