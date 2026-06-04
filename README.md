@@ -1,16 +1,100 @@
-# React + Vite
+# Jordan Coleman for Hancock County Commissioner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**"Built for Community. Ready to Lead."**
 
-Currently, two official plugins are available:
+Official campaign website for Jordan Coleman's campaign for Hancock County Commissioner. Built with React and Vite, deployed on Netlify.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Hero Section** — Campaign introduction with photo, branding, and donate/volunteer CTAs
+- **About Jordan** — Biography covering personal story, leadership experience, nonprofit work, and public service
+- **Campaign Priorities** — Smart Growth, Infrastructure, Public Safety, Community Engagement & Transparency
+- **Donation Integration** — Direct ActBlue fundraising links in the nav, hero, and CTA sections
+- **Volunteer Recruitment** — CTA linked to the campaign email
+- **Fully Responsive** — Optimized for desktop, tablet, and mobile
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| [React 19](https://react.dev) | UI framework |
+| [Vite](https://vite.dev) | Build tool & dev server |
+| [Netlify](https://netlify.com) | Hosting & continuous deployment |
+| CSS3 | Styling |
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Install & Run
+
+```bash
+npm install
+npm run dev
+```
+
+The site will be available at `http://localhost:5173`.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+Output goes to the `dist/` directory.
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## Deployment
+
+The site is deployed via Netlify with continuous deployment from the `main` branch on GitHub. Pushes to `main` automatically trigger a new build and deploy.
+
+---
+
+## Planned Enhancements
+
+- [ ] Event calendar
+- [ ] Campaign news and updates
+- [ ] Endorsements section
+- [ ] Yard sign request forms
+- [ ] Community testimonials
+- [ ] Expanded volunteer management
+- [ ] Photo galleries
+- [ ] **Decap CMS** — browser-based content management for campaign staff
+
+---
+
+## Project Structure
+
+```
+jordan-coleman-campaign/
+├── public/           # Static assets
+├── src/
+│   ├── App.jsx       # Main application component
+│   ├── main.jsx      # Entry point
+│   └── ...
+├── index.html
+├── vite.config.js
+└── package.json
+```
+
+---
+
+## Contact
+
+Campaign inquiries: [jordancolemanforhancock@gmail.com](mailto:jordancolemanforhancock@gmail.com)
